@@ -53,7 +53,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 		purchaseRequest.setTimestamp(JioMoneyUtil.getCurrentTimestamp());
 		purchaseRequest.setAmount("1.00");
 		purchaseRequest.setCurrency("INR");
-		purchaseRequest.setMobilenumber("9619226473");
+		purchaseRequest.setMobilenumber("1234567890");
 		purchaseRequest.setCustomerid("1000523403");
 		purchaseRequest.setProductdescription("testproduct");
 		purchaseRequest.setUdf1("ud11");
@@ -84,7 +84,7 @@ public static void refund() {</br>
 		requestHeader.setTimestamp(JioMoneyUtil.getCurrentTimestamp());
 		RefundRequestPayloadData payloadData = new RefundRequestPayloadData();
 		payloadData.setAdditional_info("NA");
-		payloadData.setMobile_no("9619226473");
+		payloadData.setMobile_no("1234567890");
 		payloadData.setOrg_jm_tran_ref_no("901033485327");
 		payloadData.setOrg_txn_timestamp("20170906151601");
 		payloadData.setTran_ref_no(JioMoneyUtil.getTranRefNumber());
